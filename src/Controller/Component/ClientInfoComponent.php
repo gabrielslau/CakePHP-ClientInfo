@@ -38,6 +38,7 @@ class ClientInfoComponent extends Component
     /**
      * @param array $config Array of config.
      *
+     * @return void
      * @throws \Sinergi\BrowserDetector\InvalidArgumentException
      */
     public function initialize(array $config = [])
@@ -53,21 +54,33 @@ class ClientInfoComponent extends Component
         $this->Language = new Language($acceptLanguage);
     }
 
+    /**
+     * @return \Cake\Http\ServerRequest
+     */
     public function request()
     {
         return $this->_registry->getController()->request;
     }
 
+    /**
+     * @return string
+     */
     public function browser()
     {
         return $this->Browser->getName();
     }
 
+    /**
+     * @return string
+     */
     public function browserVersion()
     {
         return $this->Browser->getVersion();
     }
 
+    /**
+     * @return string
+     */
     public function device()
     {
         $device = 'Computer';
@@ -86,11 +99,17 @@ class ClientInfoComponent extends Component
         return $device;
     }
 
+    /**
+     * @return string
+     */
     public function os()
     {
         return $this->Os->getName();
     }
 
+    /**
+     * @return string
+     */
     public function language()
     {
         return $this->Language->getLanguage();

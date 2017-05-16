@@ -2,10 +2,10 @@
 
 namespace CakephpClientInfo\Test\TestCase\Controller\Component;
 
+use CakephpClientInfo\Controller\Component\ClientInfoComponent;
 use Cake\Controller\Controller;
 use Cake\Core\Configure;
 use Cake\TestSuite\TestCase;
-use CakephpClientInfo\Controller\Component\ClientInfoComponent;
 use Sinergi\BrowserDetector\Browser;
 use Sinergi\BrowserDetector\Device;
 use Sinergi\BrowserDetector\Language;
