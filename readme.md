@@ -1,3 +1,15 @@
+<p align="center">
+    <a href="LICENSE.txt" target="_blank">
+        <img alt="Software License" src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square">
+    </a>
+    <a href="https://travis-ci.org/cakephp/cakephp" target="_blank">
+        <img alt="Build Status" src="https://img.shields.io/codeship/b2c9f990-1c64-0135-200b-020110d102f0.svg?style=flat-square">
+    </a>
+    <a href="https://packagist.org/packages/cakephp/cakephp" target="_blank">
+        <img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/okatsuralau/cakephp-clientinfo.svg?style=flat-square&label=stable">
+    </a>
+</p>
+
 CakePHP ClientInfo Plugin
 =======================
 
