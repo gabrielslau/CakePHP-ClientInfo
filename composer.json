@@ -16,7 +16,8 @@
 	},
 	"require-dev" : {
 		"phpunit/phpunit": "^6.1",
-		"cakephp/cakephp": "^3.2"
+		"cakephp/cakephp": "^3.2",
+		"cakephp/cakephp-codesniffer": "^3.0"
 	},
 	"autoload": {
 	    "psr-4": {
@@ -33,7 +34,7 @@
 			"@cs-check",
 			"@test"
 		],
-		"cs-check": "phpcs --colors -p ./src ./tests",
+		"cs-check": "phpcs --standard=CakePHP --colors -p ./src ./tests",
 		"cs-fix": "phpcbf --colors ./src ./tests",
 		"test": "phpunit",
 		"test-coverage": "phpunit --coverage-clover=clover.xml"
