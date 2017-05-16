@@ -64,20 +64,15 @@ Configure::write('Session', [
 ]);
 
 Log::config([
-    // 'queries' => [
-    //     'className' => 'Console',
-    //     'stream' => 'php://stderr',
-    //     'scopes' => ['queriesLog']
-    // ],
     'debug' => [
-        'engine' => 'Cake\Log\Engine\FileLog',
-        'levels' => ['notice', 'info', 'debug'],
-        'file' => 'debug',
+        'className' => 'Console',
+        'stream' => 'php://stderr',
+        'levels' => ['notice', 'info', 'debug']
     ],
     'error' => [
-        'engine' => 'Cake\Log\Engine\FileLog',
-        'levels' => ['warning', 'error', 'critical', 'alert', 'emergency'],
-        'file' => 'error',
+        'className' => 'Console',
+        'stream' => 'php://stderr',
+        'levels' => ['warning', 'error', 'critical', 'alert', 'emergency']
     ]
 ]);
 
