@@ -52,8 +52,6 @@ define('CONFIG', TEST_APP . 'config' . DS);
 @mkdir(CACHE . 'models');
 //@codingStandardsIgnoreEnd
 
-require_once CORE_PATH . 'config/bootstrap.php';
-
 date_default_timezone_set('UTC');
 mb_internal_encoding('UTF-8');
 
